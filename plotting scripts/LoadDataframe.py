@@ -1,7 +1,5 @@
 from tbparse import SummaryReader
-import pandas as pd
 
-import matplotlib.pyplot as plt
 
 def load_dataframe(log_dir):
 
@@ -13,5 +11,4 @@ def load_dataframe(log_dir):
     image_dict_arr = df['Image'].apply(SummaryReader.tensor_to_image)
     df['Image'] = image_dict_arr.apply(lambda x: x['image'])
     
-
     return df
