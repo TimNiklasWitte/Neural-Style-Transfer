@@ -29,9 +29,13 @@ As a consequence, the content image has been used as inital image (init_content)
 # Usage
 Note, this repository is used as additional lecture material of the Implementing ANNs with TensorFlow
 course of the Osnabrück University (winter semester 2023/24).
-In order to make the code easy to understand, parameterization of the code via runtime arguments (terminal) has been avoided.
+In order to make the code easier to understand, parameterization of the code via runtime arguments (terminal) has been avoided.
 
-Start the training 
+Start the training (create image: the artistic style captured in style image image is transferred onto the content image)
+
+```
+python3 Training.py
+```
 
 ## Overview of directories
 - `./images`: contains content and style images
